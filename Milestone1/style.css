@@ -39,6 +39,20 @@ body{
     padding: 40px;
     margin: 30px;
 }
+button:hover {
+    background-image: url(
+'https://media.geeksforgeeks.org/wp-content/uploads/20190314004249/sample-image2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect for keyboard navigation */
+button:focus {
+    outline: none;
+    border: 2px solid #2980b9;
+}
 .profile_img{
     position: relative;
     width: 200px;
