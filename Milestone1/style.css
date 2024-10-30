@@ -155,20 +155,17 @@ li {
 }
 
 .contact{
-    margin-top: 25px;
     display: flex;
+    margin-top: 25px;
 }
 .contact_icon{
-    width: 50px;
-    height: 50px;
     flex:20%;
-    position: relative;
+    
 }
 .details{
     flex:80%;
-    align-items: left;
-    padding: 5px;
-    position: relative;
+    justify-content: center;
+  
 }
 .job_desc{
     background-color: green;
