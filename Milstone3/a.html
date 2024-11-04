@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  height: 100vh; /* Full viewport height */
+}
+
+.column-1,
+.column-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-height rows for sub-columns */
+}
+
+.sub-column {
+  /* Optional styling for visibility */
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="column-1">
+              Content for the first column
+            </div>
+            <div class="column-2">
+              <div class="sub-column">Sub-column 1</div>
+              <div class="sub-column">Sub-column 2</div>
+            </div>
+          </div>
+          
+    </body>
+</html>

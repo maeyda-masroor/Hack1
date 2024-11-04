@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffda79;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4081;
+    cursor: pointer;
+  }
+
+  /* Links styling */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ff4081;
+  }
+
+  /* Mobile menu styling */
+  .nav-links-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #ffda79;
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ff4081;
+  }
+
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+    /* Show mobile menu when checkbox is checked */
+    .navbar input[type="checkbox"]:checked ~ .nav-links-mobile {
+      display: flex;
+    }
+  }
